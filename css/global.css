@@ -71,6 +71,7 @@ summary {
 
 article {
   margin: 0.5rem;
+  max-width: 34rem;
 }
 
 h2 {
