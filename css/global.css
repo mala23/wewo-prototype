@@ -7,7 +7,7 @@
   width: 2rem;
   height: 1rem;
   z-index: 10;
-  right: 1rem;
+  right: .5rem;
   top: 1rem;
   transition: height .4s, top .4s;
   color: black;
@@ -32,11 +32,11 @@
 }
 
 .header {
-  width: 100vw;
   text-align: center;
   position: relative;
   border-bottom: 1px solid black;
   padding-bottom: 2rem;
+  margin: 0 .5rem;
 }
 
 .header__logo {
@@ -151,10 +151,34 @@ p {
     Landing Page
 ----------------------------*/
 
-top-stories__header {
-  width: 100vw;
-  border-top: 1px solid black;
-  background-color: salmon;
+.top-stories {
+  margin: .5rem auto;
+  padding: 0 .5rem;
+  max-width: 34rem;
+}
+
+.top-stories__header {
+  border-bottom: 1px solid black;
+  margin: 2rem 0;
+  max-width: 25rem;
+}
+
+.story {
+  background-color: #E2E2E2;
+  max-width: 25rem;
+}
+
+.story__date {
+  font-variant-caps: all-small-caps;
+  font-size: .8rem;
+  line-height: 1.17;
+  padding: 1rem 0 .25rem 1rem;
+}
+
+.story__image {
+  margin: .5rem auto 1.5rem auto;
+  width: 100%;
+  max-width: 34rem;
 }
 
 h5 {
@@ -163,10 +187,50 @@ h5 {
   line-height: 1.17;
 }
 
+h6 {
+  font-variant-caps: all-small-caps;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.17;
+  color: gray;
+  margin: 1.25rem 0 1rem 0;
+}
+
+h7 {
+  display: block;
+  margin-bottom: .5rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.story__paragraph {
+  font-family: sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-indent: 2rem;
+}
+
+
 /*---------------------------
     Media Queries
 ----------------------------*/
 
 @media all and (min-width: 800px) {
+}
+
+@media all and (min-width: 400px) {
+  .story__article {
+    padding: 0 1rem;
+  }
+  
+  .story__date {
+    padding-left: 2rem;
+  }
+
+  .story__paragraph {
+    text-indent: 3rem;
+  }
 }
 
