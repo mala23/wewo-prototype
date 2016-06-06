@@ -91,7 +91,6 @@ aside {
 .aside__social {
   width: 100%;
   position: relative;
-  height: 3rem;
   margin: 3rem auto 2rem auto;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -99,8 +98,9 @@ aside {
 
 .aside-social__list {
   margin: 0 auto;
+  display: block;
+  width: 80%;
   position: relative;
-  display: inline-block;
 }
 
 .aside-social__item {
@@ -129,7 +129,7 @@ aside {
 
 .aside-imprint__tags p {
   display: inline-block;
-  margin-right: .5rem;
+  margin: 0 .5rem .5rem 0;
   border: 1px solid black;
   padding: 0.3rem 0.5rem;
 }
