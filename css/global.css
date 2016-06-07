@@ -2,6 +2,114 @@
     Global
 ----------------------------*/
 
+/*
+.nav__toggle {
+  position: absolute;
+  width: 2rem;
+  height: 1rem;
+  z-index: 10;
+  right: 1rem;
+  top: 2rem;
+  transition:
+    height .4s,
+    top .4s;
+}
+
+.nav__toggle:before,
+.nav__toggle:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: .3rem;
+  background-color: @dark-grey;
+  transform: rotate(0);
+  transition:
+    background-color .4s,
+    transform .4s,
+    top .4s,
+    bottom .4s;
+}
+
+.nav__toggle:after {
+  top: initial;
+  bottom: 0;
+}
+
+.nav__toggle--expanded {
+  top: 1rem;
+  height: 2rem;
+}
+
+.nav__toggle--expanded:before,
+.nav__toggle--expanded:after {
+  top: 50%;
+  bottom: initial;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.nav__toggle--expanded:after {
+  transform: rotate(-45deg);
+}
+
+.nav__list {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  margin: 0;
+  padding: 12vh 0;
+  background-color: rgba(74,74,74,0.99);
+  list-style: none;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.nav__list--expanded {
+  top: 0;
+  opacity: 1;
+}
+
+.nav__item {
+  .navText;
+  color: white;
+  line-height: 6rem;
+  text-align: center;
+  transition: background-color .2s;
+}
+
+.nav__item--active 
+  .nav__link {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.nav__item:hover {
+  background-color: rgba(60,60,60,0.99);
+}
+
+.nav__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav__toggle {
+  position: absolute;
+  width: 2rem;
+  height: 1rem;
+  z-index: 10;
+  right: .5rem;
+  top: 1rem;
+  transition: height .4s, top .4s;
+  color: black;
+  cursor: pointer;
+}
+*/
+
 .main-nav {
   position: absolute;
   width: 2rem;
@@ -179,6 +287,11 @@ p {
   background-color: #E2E2E2;
   max-width: 25rem;
   margin: 2rem 0 0 0;
+}
+
+.story a {
+  text-decoration: none;
+  color: black;
 }
 
 .story__date {
