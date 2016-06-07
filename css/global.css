@@ -159,18 +159,26 @@ p {
 .top-stories {
   margin: .5rem auto;
   padding: 0 .5rem;
-  max-width: 34rem;
+  max-width: 25rem;
 }
 
 .top-stories__header {
   border-bottom: 1px solid black;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   max-width: 25rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .story {
   background-color: #E2E2E2;
   max-width: 25rem;
+  margin: 2rem 0 0 0;
 }
 
 .story__date {
@@ -222,7 +230,18 @@ h7 {
     Media Queries
 ----------------------------*/
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 840px) {
+  .top-stories {
+    max-width: 52rem;
+  }
+
+  .story {
+    margin: 2rem 0 0 0;
+  }
+
+  .story:nth-child(even) {
+    margin: 2rem 0 0 2rem;
+  }
 }
 
 @media all and (min-width: 400px) {
